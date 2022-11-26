@@ -7,12 +7,11 @@ def check(rl, o):
             continue
         else:
             valueneeded = o - rl[i]
-            j = i+1
-            for j in range(len(rl)):
+            for j in range(i,len(rl)):
                 if valueneeded == rl[j]:
                     return True
     return False
 
 
 
-print(check([4,5,6,2,3],13))
+print(check([4,5,6,2,3],12))
